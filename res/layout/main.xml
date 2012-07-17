@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/correctheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="Correct : " >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+         <TextView
+            android:id="@+id/seperator"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seperator" ></TextView>
+         
+         <TextView
+            android:id="@+id/correcttotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" ></TextView>
+         
+         
+        <TextView
+            android:id="@+id/wrongattemptsheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="Incorrect : " />
+
+        <TextView
+            android:id="@+id/wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+        
+        
+         <TextView
+            android:id="@+id/seperator"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seperator" ></TextView>
+         
+           <TextView
+            android:id="@+id/wrongtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+           <TextView
+            android:id="@+id/seperator"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seperator" ></TextView>
+           
+         <TextView
+            android:id="@+id/lookbackheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="Hocuses : " />
+         
+          <TextView
+              android:id="@+id/lookback"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="0" />
+          <TextView
+            android:id="@+id/seperator"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seperator" ></TextView>
+               
+               <TextView
+            android:id="@+id/lookbacktotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+            
+               <TextView
+            android:id="@+id/scoreheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="Score : " />
+         
+          <TextView
+              android:id="@+id/score"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="0" />
+          
+
+    </LinearLayout>
+
+	<ViewSwitcher
+	    android:id="@+id/viewSwitcher1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:layout_weight="0.8">
+         
+    </ViewSwitcher>
+    
+	<Button 
+	    android:id="@+id/but"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:onClick="func"
+	    
+	    
+	    android:text="Focus >>"/>
+    </LinearLayout>
